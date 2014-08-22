@@ -1,0 +1,23 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            winkerVSbecks
+tagline:          finder of new ways to confuse myself
+url:              http://blog.lambdafunction.ca
+paginate:         3
+baseurl:          /
+exclude: 					['node_modules']
+author:
+  name:           Varun Vachhar
+  url:            https://twitter.com/winkerVSbecks
+  email:          varunvachhar@gmail.com
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/winkerVSbecks/le-blog
