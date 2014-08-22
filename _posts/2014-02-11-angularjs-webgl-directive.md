@@ -3,7 +3,7 @@ layout: post
 title: AngularJS WebGL Directive
 ---
 
-[![angularJS webGL Directive](/public/img/angularWebGL.png)](http://winkervsbecks.github.io/angularWebglDirective/)
+[![angularJS webGL Directive](public/img/angularWebGL.png)](http://winkervsbecks.github.io/angularWebglDirective/)
 
 AngularJS directives are siloed reusable components. This is an example of a WebGL directive built using [three.js](http://threejs.org/). You can pass setup information such as: canvas size, model size, material, lighting, etc. to the directive.
 
