@@ -10,7 +10,7 @@ title:            winkerVSbecks
 tagline:          finder of new ways to confuse myself
 url:              http://blog.lambdafunction.ca
 paginate:         3
-baseurl:          /
+baseurl:
 exclude: 					['node_modules']
 author:
   name:           Varun Vachhar
