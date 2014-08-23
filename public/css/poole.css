@@ -324,6 +324,7 @@ tbody tr:nth-child(odd) th {
   margin-bottom: 3rem;
 }
 .masthead-title {
+  position: relative;
   margin-top: 0;
   margin-bottom: 0;
   color: #FFCC33;
@@ -336,6 +337,34 @@ tbody tr:nth-child(odd) th {
   font-weight: 400;
   color: #c0c0c0;
   letter-spacing: 0;
+}
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav li {
+  display: inline-block;
+}
+.nav li + li {
+  margin-left: .5rem;
+}
+.nav li a {
+  font-size: 80%;
+  font-weight: 400;
+  color: #c0c0c0;
+  letter-spacing: 0;
+}
+.nav li a:hover { color: #364858; }
+
+@media (min-width: 34em) {
+  .masthead {
+    padding-top: 1rem;
+    text-align: right;
+  }
+  .masthead-title {
+    float: left;
+  }
 }
 
 

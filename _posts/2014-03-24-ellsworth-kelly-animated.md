@@ -1,10 +1,56 @@
 ---
 layout: post
 title: Ellsworth Kelly Animated
+source: https://github.com/winkerVSbecks/ellsworthKellyAnimated
+demo: http://winkervsbecks.github.io/ellsworthKellyAnimated
 ---
 
-![](https://d13yacurqjgara.cloudfront.net/users/71021/screenshots/1476876/hero.gif)
+In February 2014 Google launched their [DevArt](https://devart.withgoogle.com/#/about) project in partnership with [Barbican](https://www.barbican.org.uk/). In Google's words:
 
-![](https://d13yacurqjgara.cloudfront.net/users/71021/screenshots/1281107/springywavybox.gif)
+> DevArt is a celebration of art made with code by artists that push the possibilities of creativity - where technology is their canvas and code is their raw material.
 
-![](https://d13yacurqjgara.cloudfront.net/users/71021/screenshots/1281119/springytriangles.gif)
+This was my entry and it ended up being [shortlisted](https://devart.withgoogle.com/#/project/18198727) for the finals.
+
+![](/public/img/orange.gif)
+![](/public/img/ropeinterface.gif)
+
+{% include demo-source.html %}
+
+A couple of years ago I made a [Processing](http://processing.org/) sketch with the logic described in the image below. Shortly thereafter I came across Ellsworth Kelly's [Black Relief II](http://www.matthewmarks.com/new-york/exhibitions/2011-02-12_ellsworth-kelly/works-in-exhibition/#/images/5/). It seemed that, unknowingly, I had created an animated version of his painting.
+
+![](/public/img/polygon.png)
+
+This led me to explore more of his work. His paintings carry an immense amount of potential energy in my opinion. It's as if they are kinetic sculptures frozen in time.
+
+This project is an attempt to animate some of his pieces using web-based technologies.
+
+Most of the works are made using [Box2dWeb](https://code.google.com/p/box2dweb/). A simple mouse click allows you to animate them.
+
+In the first piece, you can grab the interface of the blue blob and the surrounding green fill and drag it around. Press `?` to see the underlying skeleton.
+
+The project is also available as a Google Chrome App: [Ellsworth Kelly Animated](https://chrome.google.com/webstore/detail/ellsworth-kelly-animated/mhgohnogimfoohafafblgpgonabjhlal)
+
+## Example Code
+An example of how the impluse is provided to the particles in order to animate the shapes
+
+{% highlight js %}
+SpringyTriangle.prototype.impulse = function () {
+	var ping = Math.random(-1,1);
+	var pinger = 1;
+	if (ping > 0) pinger = 1;
+	if (ping <= 0) pinger = -1;
+	var appliedForce = new b2Vec2(this.force.x*pinger / scale, this.force.y / (2*scale) );
+	this.imp = this.a_imp.getPosition();
+	this.a_imp.body.ApplyImpulse(appliedForce, this.imp);
+};
+{% endhighlight %}
+
+## Links to External Libraries
+- [Box2dWeb](https://code.google.com/p/box2dweb/)
+- [Make a rope with Box2dWeb](http://www.binarytides.com/make-rope-box2d-javascript/)
+
+## Prototypes made with Processing
+
+![](/public/img/springywavybox.gif)
+
+![](/public/img/springytriangles.gif)
