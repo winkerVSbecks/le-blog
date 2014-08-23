@@ -5,7 +5,7 @@ citation: patakk.tumblr.com
 citation-link: http://patakk.tumblr.com/post/88602945835/heres-a-simple-function-you-can-use-for-easing
 ---
 
-[patakk](http://patakk.tumblr.com/) is an insanely talented GIF artist and on his tumblr blog he shared this simple but amazing easing function:
+[patakk](http://patakk.tumblr.com/) is an insanely talented GIF artist and on his tumblr blog he shared this simple yet amazing easing function:
 
 The `time` variable goes from `0` to `1` and `g` adjusts the amount of easing.
 

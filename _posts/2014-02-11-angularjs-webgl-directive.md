@@ -1,8 +1,8 @@
 ---
 layout: post
 title: AngularJS WebGL Directive
-demo: https://github.com/winkerVSbecks/angularWebglDirective
-source: http://winkervsbecks.github.io/angularWebglDirective
+demo: http://winkervsbecks.github.io/angularWebglDirective
+source: https://github.com/winkerVSbecks/angularWebglDirective
 citation: original three.js demo
 citation-link: http://threejs.org/examples/#webgl_geometry_colors
 ---
