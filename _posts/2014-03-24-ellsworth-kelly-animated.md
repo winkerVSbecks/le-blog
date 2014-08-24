@@ -5,7 +5,7 @@ source: https://github.com/winkerVSbecks/ellsworthKellyAnimated
 demo: http://winkervsbecks.github.io/ellsworthKellyAnimated
 ---
 
-In February 2014 Google launched their [DevArt](https://devart.withgoogle.com/#/about) project in partnership with [Barbican](https://www.barbican.org.uk/). In Google's words:
+In February 2014 Google launched it's [DevArt](https://devart.withgoogle.com/#/about) project in partnership with [Barbican](https://www.barbican.org.uk/). In Google's words:
 
 > DevArt is a celebration of art made with code by artists that push the possibilities of creativity - where technology is their canvas and code is their raw material.
 
@@ -30,8 +30,21 @@ In the first piece, you can grab the interface of the blue blob and the surround
 
 The project is also available as a Google Chrome App: [Ellsworth Kelly Animated](https://chrome.google.com/webstore/detail/ellsworth-kelly-animated/mhgohnogimfoohafafblgpgonabjhlal)
 
-## Example Code
-An example of how the impluse is provided to the particles in order to animate the shapes
+## The Code
+I wanted to play around with the idea of springy membranes. This was particularly inspired by the [Red Curve Relief](http://1.bp.blogspot.com/-h8vIARrJHTI/TVgr1IHdJbI/AAAAAAAADZM/eF_8iRYRX08/s1600/43b6c106.jpg) artwork by Ellsworth Kelly.
+
+To do so, I had two options:
+
+- Use easing functions to replicate springy movements
+- Use a physics engine to create a skeleton and add organic movements
+
+I see these shapes as animated creatures, so I chose the latter. The skeleton is made up of particles and spring-links.
+
+![](/public/img/skeleton.png)
+
+The bottom three particles are anchors. The remaining are dynamic particles connected to the anchors and adjacent particles using springs.
+
+An example of how the impulse is provided to the particles in order to animate the shapes:
 
 {% highlight js %}
 SpringyTriangle.prototype.impulse = function () {
@@ -45,12 +58,12 @@ SpringyTriangle.prototype.impulse = function () {
 };
 {% endhighlight %}
 
-## Links to External Libraries
-- [Box2dWeb](https://code.google.com/p/box2dweb/)
-- [Make a rope with Box2dWeb](http://www.binarytides.com/make-rope-box2d-javascript/)
+The other pieces used similar ideas of node based skeleton with an overlaid  shape. I explain the process behind each piece in more detail on the [project site](https://devart.withgoogle.com/#/project/18198727).
 
-## Prototypes made with Processing
+## Early Prototypes Made with Processing
 
 ![](/public/img/springywavybox.gif)
 
 ![](/public/img/springytriangles.gif)
+
+![](/public/img/manypolygons.gif)
