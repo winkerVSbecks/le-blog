@@ -5,10 +5,24 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <meta content="An outlet for my experiments in CSS, webGL, canvas, angularJS, javascript, generative art and design." name="description">
-  <meta content="An outlet for my experiments in CSS, webGL, canvas, angularJS, javascript, generative art and design." name="og:description">
-  <meta content="varun vachhar, finder of new ways to confuse myself" name="og:title">
-  <meta content="varun.ca" name="og:site_name">
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="varun.ca" />
+  <meta itemprop="description" content="An outlet for my experiments in CSS, webGL, canvas, JavaScript, generative art and design." />
+  <meta itemprop="image" content="{{ site.baseurl }}public/apple-touch-icon-precomposed.png" />
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@winkerVSbecks" />
+  <meta property="og:url" content="http://varun.ca" />
+  <meta name="twitter:title" content="Varun Vachhar, finder of new ways to confuse myself" />
+  <meta name="twitter:description" content="An outlet for my experiments in CSS, webGL, canvas, JavaScript, generative art and design." />
+  <meta name="twitter:image" content="{{ site.baseurl }}public/apple-touch-icon-precomposed.png" />
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Varun Vachhar, finder of new ways to confuse myself" />
+  <meta property="og:site_name" content="varun.ca" />
+  <meta property="og:url" content="http://varun.ca" />
+  <meta property="og:description" content="An outlet for my experiments in CSS, webGL, canvas, JavaScript, generative art and design." />
+  <meta property="og:image" content="{{ site.baseurl }}public/apple-touch-icon-precomposed.png" />
+  <meta property="og:type" content="website" />
 
   <title>
     {% if page.title == "Home" %}
@@ -19,14 +33,11 @@
   </title>
 
   <!-- CSS -->
-  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css">
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}public/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}atom.xml">
 </head>
