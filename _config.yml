@@ -6,16 +6,17 @@ highlighter:      pygments
 permalink:        /:title
 
 # Setup
-title:            varun vachhar
-tagline:          finder of new ways to confuse myself
-url:              http://blog.lambdafunction.ca
-paginate:         3
-baseurl:					/
-exclude: 					['node_modules']
+title:             varun vachhar
+tagline:           finder of new ways to confuse myself
+url:               http://blog.lambdafunction.ca
+paginate:          3
+excerpt_separator: <!--more-->
+baseurl:					 /
+exclude: 					 ['node_modules']
 author:
-  name:           Varun Vachhar
-  url:            https://twitter.com/winkerVSbecks
-  email:          varunvachhar@gmail.com
+  name:            Varun Vachhar
+  url:             https://twitter.com/winkerVSbecks
+  email:           varunvachhar@gmail.com
 
 # Custom vars
 version:          1.0.0
