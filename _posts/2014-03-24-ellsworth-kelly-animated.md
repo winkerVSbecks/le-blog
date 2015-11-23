@@ -18,6 +18,8 @@ This was my entry and it ended up being [shortlisted](https://devart.withgoogle.
 
 A couple of years ago I made a [Processing](http://processing.org/) sketch with the logic described in the image below. Shortly thereafter I came across Ellsworth Kelly's [Black Relief II](http://www.matthewmarks.com/new-york/exhibitions/2011-02-12_ellsworth-kelly/works-in-exhibition/#/images/5/). It seemed that, unknowingly, I had created an animated version of his painting.
 
+<!--more-->
+
 ![](/public/img/polygon.png)
 
 This led me to explore more of his work. His paintings carry an immense amount of potential energy in my opinion. It's as if they are kinetic sculptures frozen in time.

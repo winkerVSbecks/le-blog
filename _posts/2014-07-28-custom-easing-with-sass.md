@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Easing with SASS
+title: Custom Easing with Sass
 citation: patakk.tumblr.com
 citation-link: http://patakk.tumblr.com/post/88602945835/heres-a-simple-function-you-can-use-for-easing
 ---
@@ -20,7 +20,7 @@ float ease(float p, float g){
 }
 {% endhighlight %}
 
-3D animation has this concept of *[baking an animation](http://softimage.wiki.softimage.com/xsidocs/ani_proc_PlottingAnimation.htm)*. The same idea can be extended to *baking an easing effect* with SASS. The `easingGenerator` generates keyframe animations using this custom easing function.
+3D animation has this concept of *[baking an animation](http://softimage.wiki.softimage.com/xsidocs/ani_proc_PlottingAnimation.htm)*. The same idea can be extended to *baking an easing effect* with Sass. The `easingGenerator` generates keyframe animations using this custom easing function.
 
 {% highlight scss %}
 @function ease($time, $g) {
@@ -42,7 +42,7 @@ float ease(float p, float g){
 }
 {% endhighlight %}
 
-<p data-height="500" data-theme-id="7569" data-slug-hash="Cihkr" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/winkerVSbecks/pen/Cihkr/'>SASS Mixin for Generating a Custom Easing Function</a> by Varun Vachhar (<a href='http://codepen.io/winkerVSbecks'>@winkerVSbecks</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="500" data-theme-id="7569" data-slug-hash="Cihkr" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/winkerVSbecks/pen/Cihkr/'>Sass Mixin for Generating a Custom Easing Function</a> by Varun Vachhar (<a href='http://codepen.io/winkerVSbecks'>@winkerVSbecks</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 {% include citation.html %}
