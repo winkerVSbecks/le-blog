@@ -160,13 +160,13 @@ We could stop here, but you’ll notice that in the original GIF the wave has ro
 The rounded ends are both somewhere offscreen. Therefore, to achieve the appropriate effect we have to rely on [stroke-dasharray](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-dasharray). The dash array takes values for lengths of dashes and gaps.
 
 ```css
-#wave { stroke-dasharray: 0 8 117 8; }
+#wave { stroke-dasharray: 0 16 101 16; }
 ```
 
 - We begin with `0` since we want a gap to begin with but, by default the `dasharray` applies the first value to a dash.
-- `8` is then the length of the first gap.
-- `117` is the length of the dash.
-- And finally`8` is then the length of the last gap.
+- `16` is then the length of the first gap.
+- `101` is the length of the dash.
+- And finally`16` is then the length of the last gap.
 
 The total path is approximately 120px long. Using that as a starting point, I picked these numbers after a bit of trial and error.
 
@@ -181,7 +181,7 @@ The total path is approximately 120px long. Using that as a starting point, I pi
 
 At this point if we re-introduce the animation you’ll notice that it breaks the optical illusion of the wave  staying in place as it oscillates. The path is moving left to right. To counter this movement we need to move the dash (yup, from the dasharray above) right to left at the same speed.
 
-The `gap + dash + gap = 8 + 117 + 8 = 133`. And we can move the dash using `stroke-dashoffset` by exactly that amount – the now famous [SVG line animation technique](https://css-tricks.com/svg-line-animation-works). Notice the difference. The one of the left doesn’t have the dashoffset and the one on the right does.
+The `gap + dash + gap = 16 + 101 + 16 = 133`. And we can move the dash using `stroke-dashoffset` by exactly that amount – the now famous [SVG line animation technique](https://css-tricks.com/svg-line-animation-works). Notice the difference. The one of the left doesn’t have the dashoffset and the one on the right does.
 
 <p data-height="280"
   data-theme-id="7569"
