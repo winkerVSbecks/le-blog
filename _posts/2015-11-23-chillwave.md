@@ -191,3 +191,13 @@ The `gap + dash + gap = 16 + 101 + 16 = 133`. And we can move the dash using `st
   class='codepen'>
 </p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+### Update
+
+Had to add the following fix for Safari. For some reason the SVG view-port is larger on it than other browsers.
+
+```html
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="80px" height="60px"
+     viewBox="5 0 80 60">
+```
