@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         redcarpet
-highlighter:      pygments
+highlighter:      rouge
 
 # Permalinks
 permalink:        /:title
@@ -22,3 +22,5 @@ author:
 version:          1.0.0
 github:
   repo:           https://github.com/winkerVSbecks/le-blog
+
+gems: [jekyll-paginate]
