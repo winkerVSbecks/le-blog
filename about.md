@@ -4,8 +4,4 @@ title: Hello!
 ---
 
 
-<p class="lead">I'm Varun Vachhar, a creative technologist based in Toronto. Currently working at <a href="http://rangle.io/">rangle.io</a>.</p>
-
-<p class="lead">I love JavaScript, CSS, WebGL, Canvas &amp; <a href="http://triangle.life">triangles</a>.</p>
-
-<p class="lead">Thanks for reading!</p>
+<p class="lead">Originally from New Delhi, India. Varun is developer with a strong focus on design, interactivity and animation. He currently lives in Toronto, Canada and works as a JavaScript developer at <a href="http://rangle.io">Rangle.io</a>. In his spare time, he likes to experiment with creative coding, <a href="http://triangle.life">triangles</a> and making playful experiences for the web.</p>
