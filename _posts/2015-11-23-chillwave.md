@@ -16,7 +16,7 @@ source: http://codepen.io/winkerVSbecks/pen/EVJGVj
 
 A few days ago I came across this creative studio called [This Also](http://thisalso.com). They just launched a new site. It not only showcases some of their amazing work but, also has this fun little loading animation.
 
-![](/public/img/chillwave.gif)
+![chillwave](/public/img/chillwave.gif)
 
 I absolutely love this! First thing I did was *right click & inspect element* and was expecting to find an SVG with SMIL animation baked in. To my surprise it turned out to be a [sprite](http://thisalso.com/img/global/chillwave.png) based animation with 24 frames. So, let’s recreate this with only SVG.
 
@@ -26,7 +26,7 @@ I absolutely love this! First thing I did was *right click & inspect element* an
 
 Step one was obvious… draw the wave using the SVG `<path>` element. In Sketch/Illustrator you would create something like this using the pen tool. It’s a Bézier curve with 2 points – each with a handle (control point). The wave is simply a collection of this path alternating with its mirror image.
 
-![](/public/img/wave-path.jpg)
+![wave path](/public/img/wave-path.jpg)
 
 To create this path with SVG we will use the Bézier curve command `c` – lower case which means [relative coordinates](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths). We need to repeat this pattern several times, instead of trying to figure out the absolute location of each point we can use relative coordinates to make our life easier.
 
